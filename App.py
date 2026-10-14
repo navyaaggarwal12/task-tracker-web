@@ -332,6 +332,64 @@ st.markdown(
             font-size: 23px;
         }}
     }}
+    
+/* Light theme for form controls */
+.stApp,
+[data-testid="stAppViewContainer"] {
+    background-color: #F4F6FB !important;
+}
+
+input, textarea {
+    background-color: #F4F5FA !important;
+    color: #252A3D !important;
+}
+
+div[data-baseweb="input"] > div,
+div[data-baseweb="select"] > div,
+div[data-baseweb="textarea"] > div {
+    background-color: #F4F5FA !important;
+    border: 1px solid #E6E8F0 !important;
+    border-radius: 4px !important;
+}
+
+div[data-baseweb="select"] *,
+div[data-baseweb="input"] input,
+div[data-baseweb="textarea"] textarea {
+    color: #252A3D !important;
+}
+
+.stRadio label,
+.stCheckbox label {
+    color: #252A3D !important;
+}
+
+/* Original-style square cards */
+.stat-card {
+    border-radius: 2px !important;
+    box-shadow: none !important;
+    min-height: 90px !important;
+}
+
+/* Buttons */
+.stButton > button,
+.stFormSubmitButton > button {
+    border-radius: 3px !important;
+    font-weight: 600 !important;
+}
+
+/* Progress bar */
+div[data-testid="stProgressBar"] {
+    background-color: #E6E8F0;
+}
+
+/* Mobile support */
+@media (max-width: 700px) {
+    .block-container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+}
+
     </style>
     """,
     unsafe_allow_html=True,
